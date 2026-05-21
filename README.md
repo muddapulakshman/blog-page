@@ -32,4 +32,20 @@ A modern, premium personal blog and portfolio built with Next.js, TypeScript, Ta
 
 3. Open `http://localhost:3000`
 
-> Note: The current terminal environment did not have Node.js / npm available, so dependency installation must be run in a local environment that has Node.js installed.
+## Environment Variables
+
+Create a `.env.local` file from the example before running the app in development or deployment:
+
+```bash
+cp .env.example .env.local
+```
+
+Then update the values as needed.
+
+## Deployment
+
+- Install dependencies: `npm install`
+- Build for production: `npm run build`
+- Start the production server: `npm start`
+
+> The `.env.local` file is ignored by Git and is intended for local secrets and deployment configuration.
